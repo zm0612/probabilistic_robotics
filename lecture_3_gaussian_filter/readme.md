@@ -16,10 +16,12 @@
 $$
 x_t  = A  x_{t-1} + B * u
 $$
+
 测量模型如下：
 $$
 y_t = Cx_t
 $$
+
 带入上述运动系统中：
 $$
 \left[
@@ -27,8 +29,7 @@ $$
  \hat p_t \\ \hat v_t
 \end{matrix}
 \right]
-=
-\left[
+=\left[
 \begin{matrix}
 1 & T \\ 0 & 1
 \end{matrix}
@@ -38,8 +39,7 @@ $$
 p_{t-1} \\ v_{t-1}
 \end{matrix}
 \right]
-+
-\left[
++\left[
 \begin{matrix}
 0.5 T^2 \\ T
 \end{matrix}
@@ -57,8 +57,7 @@ $$
 y_t
 \end{matrix}
 \right]
-=
-\left[
+= \left[
 \begin{matrix}
 1 & 0
 \end{matrix}
