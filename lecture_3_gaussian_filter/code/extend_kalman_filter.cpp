@@ -48,7 +48,7 @@ void GetSimData(const double *init_state,
 
 void ExtendKalmanFilter() {
     const double init_state[4] = {0.0, 50, 500.0, 0};
-    const double measure_noises_variance[2] = {1, 0.00001};
+    const double measure_noises_variance[2] = {0.5, 0.0001};
     const double delta_t = 0.1;
     const double duration = 50.0;
 
